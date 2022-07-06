@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap");
+
+body {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-family: "Quicksand", sans-serif;
+    /* height: 100vh; */
+    margin: 0;
+    background-color: #212121;
+}
+
+img {
+    max-width: 600px;
+    border-radius: 30px;
+}
+
+main {
+    text-align: center;
+}
+
+button {
+    border: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 16px;
+    background: #404040;
+    color: white;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+button:hover {
+    background: orange;
+}
+main h1 {
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.lds-dual-ring {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
